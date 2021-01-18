@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <title>Esercizio 2</title>
+    <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+    <div class="formcont">
+        <form class="registration" id="registration">
+            <h1>Registrazione</h1>
+            <div class="nome">
+                <label for="name">
+                    <span>Nome * </span>
+                    <input class="obbligatorio" type="text" id="name" required>
+                    <i class="correct fas fa-check-circle"></i>
+                    <i class="error fas fa-exclamation-triangle"></i>
+                </label>
+            </div>
+            <br>
+            <div class="cognome">
+                <label for="surname">
+                    <span>Cognome *</span>
+                    <input class="obbligatorio" type="text" id="surname" required>
+                    <i class="correct fas fa-check-circle"></i>
+                    <i class="error fas fa-exclamation-triangle"></i>
+                </label>
+            </div>
+            <br>
+            <div class="mail">
+                <label for="email">
+                    <span>Email *</span>
+                    <input class="obbligatorio" type="text" id="email" required>
+                    <i class="correct fas fa-check-circle"></i>
+                    <i class="error fas fa-exclamation-triangle"></i>
+                </label>
+            </div>
+            <br>
+            <div class="indirizzo">
+                <label for="address">
+                    <span>Indirizzo</span>
+                    <input class="obbligatorio" id="address" type="text" minlength="10">
+                    <i class="correct fas fa-check-circle"></i>
+                    <i class="error fas fa-exclamation-triangle"></i>
+                </label>
+                <ul>
+                    <li>Facoltativo: vuoto o almeno 10 caratteri</li>
+                </ul>
+            </div>
+            <br>
+            <div class="pass">
+                <label for="password">
+                    <span>Password *
+                        <button class="show" onclick="togglePass()">mostra</button>
+                    </span>
+                    <input class="obbligatorio" type="password" id="password" minlength="10" required>
+                    <i class="correct fas fa-check-circle"></i>
+                    <i class="error fas fa-exclamation-triangle"></i>
+                </label>
+                <ul class="input-requirements">
+                    <li class="regola">Almeno 10 caratteri</li>
+                    <li class="regola">Almeno 1 numero</li>
+                    <li class="regola">Almeno 3 caratteri speciali(es. @ !)</li>
+                    <li class="regola">Nessuno Spazio</li>
+                    <li class="regola">Non deve contenere il Nome o il Cognome</li>
+                </ul>
+            </div>
+            <br>
+            <div class="repeat">
+                <label for="password_repeat">
+                    <span>Conferma Password *
+                        <button class="show" onclick="togglecPass()">mostra</button>
+                    </span>
+                    <input class="obbligatorio" type="password" id="password_repeat" minlength="10" required>
+                    <i class="correct fas fa-check-circle"></i>
+                    <i class="error fas fa-exclamation-triangle"></i>
+                </label>
+            </div>
+            <br>
+            <div class="btncont">
+                <button class="btn">Invia</button>
+                <p>* indica i campi obbligatori</p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: steelblue;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+
+.formcont{
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px 60px;
+  border-radius: 5px;
+  position: relative;
+}
+
+label{
+  display: inline-flex;
+  margin: 20px 0;
+}
+
+span{
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: right;
+  margin-right:15px;
+  position: absolute;
+  left:0;
+}
+
+input {
+  height: 30px;
+  width: 150px;
+  margin-top: 10px;
+  position: absolute;
+  right: 50px;
+  outline: none;
+  font-family: inherit;
+  font-family: 'Muli', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.correct{
+  margin-top: 15px;
+  position: absolute;
+  right: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.error{
+  margin-top: 15px;
+  position: absolute;
+  right: 10px;
+  color: #e74c3c;
+  transition: all 0.3s ease-in-out;
+}
+
+.wrong{
+  border:2px solid #e74c3c;
+}
+.right{
+  border:2px solid #2ecc71;
+}
+
+.formcont h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+
+ul{
+  text-align: left;
+  align-items: left;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.regola{
+  color: #e74c3c;
+  transition: color 0.5s ease-in-out;
+}
+
+.done{
+  color: #2ecc71 !important;
+}
+
+.btncont{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  cursor: pointer;
+  background: lightblue;
+  padding: 15px;
+  font-family: inherit;
+  font-size: 16px;
+  border: 0;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.show{
+  cursor: pointer;
+  background: lightblue;
+  font-family: inherit;
+  border-radius: 5px;
+  border: 0;
+}
+
+.show:focus {
+  outline: 0;
+}
+
+.text {
+  margin-top: 30px;
+}
+
+.form-control {
+  position: relative;
+  margin: 20px 0 40px;
+  width: 300px;
+}
+
+input::-ms-reveal { 
+  display: none;
+}
